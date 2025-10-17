@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ColorCraft Paints</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #f7f7f7;
+      color: #333;
+    }
+
+    /* HEADER */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.9);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 60px;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      color: #d64541;
+      letter-spacing: 1px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #d64541;
+    }
+
+    /* HERO SECTION */
+    .hero {
+      height: 100vh;
+      background: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      color: white;
+      padding: 0 20px;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.4);
+      z-index: 0;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 800px;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 10px rgba(0,0,0,0.4);
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      background: #d64541;
+      color: white;
+      padding: 12px 30px;
+      border: none;
+      border-radius: 30px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .btn:hover {
+      background: #b23431;
+      transform: scale(1.05);
+    }
+
+    /* ABOUT SECTION */
+    .about {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 80px 60px;
+      align-items: center;
+      justify-content: center;
+      background: #fff;
+    }
+
+    .about img {
+      width: 45%;
+      max-width: 500px;
+      border-radius: 10px;
+      margin: 20px;
+    }
+
+    .about-text {
+      max-width: 500px;
+      margin: 20px;
+    }
+
+    .about-text h3 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+      color: #d64541;
+    }
+
+    .about-text p {
+      line-height: 1.6;
+      color: #555;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 50px;
+    }
+
+    footer p {
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        padding: 15px 25px;
+      }
+      .hero h2 {
+        font-size: 2.2rem;
+      }
+      .about {
+        flex-direction: column;
+        padding: 50px 20px;
+      }
+      .about img, .about-text {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>ColorCraft Paints</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Bring Life to Your Walls</h2>
+      <p>Discover vibrant paints that turn every space into a masterpiece.</p>
+      <button class="btn">Shop Now</button>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="about">
+    <img src="https://images.unsplash.com/photo-1598966733531-3ec9d51e8f23?auto=format&fit=crop&w=1600&q=80" alt="Paint shop">
+    <div class="about-text">
+      <h3>Premium Paints for Every Home</h3>
+      <p>At ColorCraft Paints, we provide a stunning range of colors and finishes to suit every mood and style. Whether you want a bold accent wall or a soothing pastel living room, our paints make it happen with ease and elegance.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 ColorCraft Paints | Designed with ❤️ for creativity and color.</p>
+  </footer>
+
+</body>
+</html>
